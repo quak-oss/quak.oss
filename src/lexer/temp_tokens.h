@@ -26,8 +26,10 @@ enum TokenType {
     TOKEN_DOT,            // .
     TOKEN_PIPE,           // |
     TOKEN_RANGE_EQUALS,   // =]
+    TOKEN_RANGE_EXCLUDING_EQUALS,  // =)
     TOKEN_INFINITE_RANGE, // [=
-    TOKEN_RANGE_BOUNDED,  // [=]
+    TOKEN_RANGE_BOUNDED_INCLUSIVE,  // [=]
+    TOKEN_RANGE_BOUNDED_EXCLUSIVE,  // [=)
 
     TOKEN_PLUS,           // +
     TOKEN_MINUS,          // -
