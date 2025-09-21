@@ -47,22 +47,36 @@ typedef enum TokenType {
     TOKEN_FALSE,
     TOKEN_TRUE,
 
+    // Boolean Operators
+    TOKEN_AND,            // &&
+    TOKEN_OR,             // ||
+    TOKEN_XOR,            // ^^
+
+    // Bitwise Operators
+    TOKEN_BIT_AND,        // &
+    TOKEN_BIT_OR,         // |
+    TOKEN_BIT_XOR,        // ^
+    TOKEN_BIT_NOT,        // ~ or `
+    TOKEN_SHIFT_LEFT,     // <<
+    TOKEN_SHIFT_RIGHT,    // >>
+
     // Operators
     TOKEN_ASSIGN,         // =
     TOKEN_COLON,          // :
     TOKEN_SEMICOLON,      // ;
     TOKEN_DOT,            // .
     TOKEN_COMMA,          // ,
+    TOKEN_EXPONENT,       // pow()
     TOKEN_PIPE,           // |
     TOKEN_QMARK,          // ?
     TOKEN_EXCMARK,        // !
     TOKEN_ARROW,          // ->
     TOKEN_ELSE_SHORT,     // !:
     TOKEN_RANGE_EQUALS,   // =]
-    TOKEN_RANGE_EXCLUDING_EQUALS,  // =)
+    TOKEN_RANGE_EXCLUSIVE_EQUALS,  // =)
     TOKEN_INFINITE_RANGE, // [=
-    TOKEN_RANGE_BOUNDED_INCLUSIVE,  // [=]
-    TOKEN_RANGE_BOUNDED_EXCLUSIVE,  // [=)
+    TOKEN_RANGE_INCLUSIVE,  // [=]
+    TOKEN_RANGE_EXCLUSIVE,  // [=)
 
     TOKEN_PLUS,           // +
     TOKEN_MINUS,          // -
@@ -94,7 +108,9 @@ typedef enum TokenType {
 
     // Special
     TOKEN_EOF,            // End of file
+    TOKEN_EXPERIMENTAL,   // For experimental features 
     TOKEN_UNKNOWN         // Unrecognized token
-};
+
+} TokenType;
 
 #endif
