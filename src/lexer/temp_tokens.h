@@ -1,3 +1,25 @@
+/*
+ * Quaklang Lexer - Token Definitions (Stage 0)
+ *
+ * This header defines all token types used by the C implementation of
+ * Quaklang's lexer. These files are temporary for Stage 0 runs while
+ * I implement the core components of the compiler. In later stages,
+ * the lexer and parser will be written directly in quaklang itself (Stage 1).
+ *
+ * Project start date : 20 Sep 2025
+ * Current version    : b0.1
+ *
+ * Notes:
+ *  - Keywords, operators, and symbols are grouped logically for readability.
+ *  - TOKEN_EOF marks the end of the input stream.
+ *  - TOKEN_UNKNOWN represents any unrecognized character or sequence.
+ *
+ * See also:
+ *  - lexer.c : The implementation of the tokenization logic.
+ *  - parser.c : The implementation of token processing and AST logic.
+ */
+
+
 #ifndef QUAK_TOKENS_H
 #define QUAK_TOKENS_H
 
@@ -6,8 +28,10 @@ enum TokenType {
     // Keywords
     TOKEN_INT,
     TOKEN_FLOAT,
+    TOKEN_BOOL,
     TOKEN_VEC,
     TOKEN_BOX,
+    TOKEN_EXISTS,
     TOKEN_U_BLOCK,
     TOKEN_FOR,
     TOKEN_IF,
@@ -18,6 +42,10 @@ enum TokenType {
     TOKEN_ALLOC,
     TOKEN_FREE,
     TOKEN_MAIN,
+
+    // Boolean Literals
+    TOKEN_FALSE,
+    TOKEN_TRUE,
 
     // Operators
     TOKEN_ASSIGN,         // =
@@ -55,7 +83,6 @@ enum TokenType {
     // Literals
     TOKEN_NUMBER,         // 42, 3.14
     TOKEN_STRING,         // "Hello World"
-    TOKEN_BOOL,           // true or false
 
     // Identifiers
     TOKEN_IDENTIFIER,
