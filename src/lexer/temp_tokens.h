@@ -23,7 +23,7 @@
 #ifndef QUAK_TOKENS_H
 #define QUAK_TOKENS_H
 
-enum TokenType {
+typedef enum TokenType {
     
     // Keywords
     TOKEN_INT,
@@ -52,7 +52,12 @@ enum TokenType {
     TOKEN_COLON,          // :
     TOKEN_SEMICOLON,      // ;
     TOKEN_DOT,            // .
+    TOKEN_COMMA,          // ,
     TOKEN_PIPE,           // |
+    TOKEN_QMARK,          // ?
+    TOKEN_EXCMARK,        // !
+    TOKEN_ARROW,          // ->
+    TOKEN_ELSE_SHORT,     // !:
     TOKEN_RANGE_EQUALS,   // =]
     TOKEN_RANGE_EXCLUDING_EQUALS,  // =)
     TOKEN_INFINITE_RANGE, // [=
