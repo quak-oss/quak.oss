@@ -5,7 +5,7 @@ while maintaining blazing fast runtime of **C-like** compiled languages.
 
 > Started: September 20, 2025  
 > Current Version: b0.1 (Bootstrap Phase)  
-> Check the [contribution guide](https://github.com/quak-oss/quaklang/blob/main/CONTRIBUTING.md) for details on how to contribute.
+> Check the [contribution guide](https://github.com/quak-oss/quaklang?tab=contributing-ov-file) for details on how to contribute.
 
 ---
 
