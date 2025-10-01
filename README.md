@@ -7,8 +7,9 @@ while maintaining blazing fast runtime of **C-like** compiled languages.
 > Current Version: b0.1 (Bootstrap Phase)  
 > Check the [contribution guide](https://github.com/quak-oss/quaklang/blob/main/CONTRIBUTING.md) for details on how to contribute.
 
+---
 
-## Example 1 : Input/Output
+### Example 1 : Input/Output
 
 -  This simple program takes input, prints a message, and returns `0`:
 
@@ -27,9 +28,8 @@ int.main():
 Input : 3
 Output : "3 was the input"
 ```
----
 
-## Example 2 : Range based loop
+### Example 2 : Range based loop
 - This example explains the use of loops in quak:
 
 ```quak
